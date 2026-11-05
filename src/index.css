@@ -1,0 +1,62 @@
+:root {
+  --bg: #0f172a;
+  --card: #192134;
+  --card-2: #1f2a40;
+  --muted-bg: #0f1f2b;
+  --fg: #f8fafc;
+  --muted: #a3b1c6;
+  --border: rgba(255, 255, 255, 0.09);
+  --primary: #16a34a;
+  --primary-soft: rgba(22, 163, 74, 0.16);
+  --accent: #f59e0b;
+  --accent-soft: rgba(245, 158, 11, 0.16);
+  --danger: #f87171;
+  --radius: 14px;
+  --ring: 0 0 0 3px rgba(245, 158, 11, 0.55);
+
+  font-family: Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--fg);
+  background: radial-gradient(1200px 600px at 10% -10%, #14352a 0%, transparent 60%), var(--bg);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
